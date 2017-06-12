@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif,serif,Verdana,'Times New Roman', Times, Arial;
+    background-color:#555555;
+}
+#login-panel{
+    background-color:#ffffff;
+    padding:50px;
+    border-radius: 5px;
+}
+
+#thumbnails-div{
+    background-color: #cccccc;
+    padding: 5px;
+    display: none;
+}
+#thumbnails-div img{
+    width: 60px;
+    height:100px;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+}
+
+
+.player{
+    background-color: #eeeeee;
+    border-radius: 5px;
+    width:40%;
+    text-align: center;
+    padding: 10px 20px;
+    float: left;
+}
+
+.player imag{
+   display:block;
+   margin: 0px auto;
+}
+
+.btn-div{
+    margin-top:2px;
+}
+
+.col-sm-6::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.player-name-bar{
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    width:60%;
+    float: left;
+    color:#333333;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    background-color:#ffffff;
+}
+
+#player-namebar, #opponent-namebar{
+    padding: 15px;
+    display: inline-block;
+    font-size: 2em;
+}
+
+#opponent-win{
+  background-color:#000000;
+  font-size: 2em;
+  color: #ffffff;
+  float:left;
+  text-align: center;
+  border-radius: 0px 5px 5px 0px;
+  padding: 15px;
+}
+
+#player-win{
+  background-color:#000000;
+  font-size: 2em;
+  color: #ffffff;
+  float:right;
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+  padding: 15px;
+}
+
+.floatdir{
+    float: right;
+}
+
+.txtdir{
+    text-align: right;
+}
+#player-board{
+    width:60%;
+    height:80px;
+    background-color:#ddffdd;
+    float:left;
+    text-align: center;
+}
+
+#opponent-board{
+    width:60%;
+    height:80px;
+    background-color:#ffdddd;
+    float:left;
+    text-align: center;
+}
+
+.msg-panel{
+    width:100%;
+    background-color:#000055;
+    margin-top:20px;
+    margin-bottom: 5px;
+    padding:20px 10px;
+    border-radius: 5px;
+}
+
+.msg-body{
+    background-color:#ffffff;
+    height: 200px;
+    margin:5px 10px;
+    overflow: scroll;
+    color:#555555;
+}
+
+.msg-pimg{
+    width:50px;
+    float:left;
+    overflow: auto;
+}
+
+.msg-ptxt{
+    background-color:#ddffdd;
+    float:left;
+    padding:3px;
+    border-radius: 2px;
+    margin:3px;
+}
+
+.msg-oimg{
+    width:50px;
+    float:right;
+    overflow: auto;
+}
+
+.msg-otxt{
+    background-color:#ffdddd;;
+    float:right;
+    padding:3px;
+    border-radius: 2px;
+    margin:3px;
+    max-width:70%;
+}
+
+.msg-clear{
+    clear: both;
+    height: 10px;
+}
+
+footer{
+    padding:50px;
+    background-color:#000000;
+    font-size: .5em;
+    text-align: center;
+    color:#666666;
+}
+
+@media only screen and (max-width:768px) {
+    .floatdir{
+    float: left;
+}
+.txtdir{
+    text-align: left;
+}
+#opponent-win{
+  float:right;
+  border-radius: 5px 0px 0px 5px;  
+}
+.player{
+   margin-top: 3px;
+}
+}
+
+
+
